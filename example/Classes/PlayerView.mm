@@ -64,15 +64,36 @@
         // Initialization code
         vid = NULL;
         targetOrient = UIInterfaceOrientationPortrait;
+		
+		// Get the layer
+        CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
+        
+        eaglLayer.opaque = YES;
+        eaglLayer.drawableProperties = [NSDictionary dictionaryWithObjectsAndKeys:
+                                        [NSNumber numberWithBool:NO], kEAGLDrawablePropertyRetainedBacking, kEAGLColorFormatRGBA8, kEAGLDrawablePropertyColorFormat, nil];
+        
+        context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
+        
+        if (!context || ![EAGLContext setCurrentContext:context]) {
+            [self release];
+            return nil;
+        }
         
         d_rot = 0.0;
         d_sx = 0.0;
         d_sy = 0.0;
         rot = 0.0;
-        sx = 1.0;
-        sy = 1.0;
+        sx = 2.0;
+        sy = 3.0;
         
+		tex_sx = 1.0;
+        tex_sy = 1.0;
+        
+        animationInterval = 1.0 / 60.0;
+		
         zoomAspect = false;
+		
+		[self layoutSubviews];
     }
     return self;
 }

@@ -29,6 +29,8 @@
 		60538D0412804E7500D44CDA /* animball.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60538D0112804E7500D44CDA /* animball.gif */; };
 		60538D0512804E7500D44CDA /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60538D0212804E7500D44CDA /* test.gif */; };
 		60538D0612804E7500D44CDA /* anim.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60538D0312804E7500D44CDA /* anim.gif */; };
+		6085B72A128C34A6007FBF81 /* AnimatedGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 6085B729128C34A6007FBF81 /* AnimatedGif.m */; };
+		6085B72D128C34DA007FBF81 /* SecondApproachCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6085B72C128C34DA007FBF81 /* SecondApproachCellsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		60538D0112804E7500D44CDA /* animball.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = animball.gif; sourceTree = "<group>"; };
 		60538D0212804E7500D44CDA /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		60538D0312804E7500D44CDA /* anim.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = anim.gif; sourceTree = "<group>"; };
+		6085B728128C34A6007FBF81 /* AnimatedGif.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedGif.h; sourceTree = "<group>"; };
+		6085B729128C34A6007FBF81 /* AnimatedGif.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedGif.m; sourceTree = "<group>"; };
+		6085B72B128C34DA007FBF81 /* SecondApproachCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondApproachCellsViewController.h; sourceTree = "<group>"; };
+		6085B72C128C34DA007FBF81 /* SecondApproachCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondApproachCellsViewController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AnimatedCells-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AnimatedCells-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +93,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6085B727128C348E007FBF81 /* Second Approach */,
 				60538C46128042CF00D44CDA /* lungif */,
 				60538C4D128042CF00D44CDA /* glgif */,
 				1D3623240D0F684500981E51 /* AnimatedCellsAppDelegate.h */,
@@ -95,6 +102,8 @@
 				60538CB2128042F100D44CDA /* PlayerView.mm */,
 				60538CB41280432500D44CDA /* AnimatedCellsViewController.h */,
 				60538CB51280432500D44CDA /* AnimatedCellsViewController.m */,
+				6085B72B128C34DA007FBF81 /* SecondApproachCellsViewController.h */,
+				6085B72C128C34DA007FBF81 /* SecondApproachCellsViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -181,6 +190,15 @@
 			path = glgif;
 			sourceTree = "<group>";
 		};
+		6085B727128C348E007FBF81 /* Second Approach */ = {
+			isa = PBXGroup;
+			children = (
+				6085B728128C34A6007FBF81 /* AnimatedGif.h */,
+				6085B729128C34A6007FBF81 /* AnimatedGif.m */,
+			);
+			name = "Second Approach";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,6 +275,8 @@
 				60538C5D128042CF00D44CDA /* VideoTexture.m in Sources */,
 				60538CB3128042F100D44CDA /* PlayerView.mm in Sources */,
 				60538CB61280432500D44CDA /* AnimatedCellsViewController.m in Sources */,
+				6085B72A128C34A6007FBF81 /* AnimatedGif.m in Sources */,
+				6085B72D128C34DA007FBF81 /* SecondApproachCellsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

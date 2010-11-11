@@ -9,16 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @class AnimatedCellsViewController;
+@class SecondApproachCellsViewController;
 
 @interface AnimatedCellsAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	AnimatedCellsViewController *viewController;
+	//AnimatedCellsViewController *viewController;
+	SecondApproachCellsViewController *viewController;
 	
 	CGSize orientFrame;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet AnimatedCellsViewController *viewController;
+//@property (nonatomic, retain) IBOutlet AnimatedCellsViewController *viewController;
+@property (nonatomic, retain) IBOutlet SecondApproachCellsViewController *viewController;
 @property (nonatomic, assign) CGSize orientFrame;
 
 @end

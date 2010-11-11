@@ -8,6 +8,7 @@
 
 #import "AnimatedCellsAppDelegate.h"
 #import "AnimatedCellsViewController.h"
+#import "SecondApproachCellsViewController.h"
 
 @implementation AnimatedCellsAppDelegate
 
